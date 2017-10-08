@@ -19,6 +19,7 @@ RUN apk --no-cache update \
             gd \
             zip \
             mysqli \
+            pdo_mysql \
     && apk del \
             libpng-dev \
             libjpeg-turbo-dev \
