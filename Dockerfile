@@ -26,4 +26,4 @@ RUN apk --no-cache update \
 
 COPY content /
 
-WORKDIR /var/www
+WORKDIR /var/www/html
