@@ -35,6 +35,10 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
         php7-zip \
     && rm -rf /var/cache/apk/*
 
+ENV PHP_MAX_EXECUTION_TIME=240
+ENV PHP_MEMORY_LIMIT=128M
+ENV PHP_MAX_INPUT_VARS=4096
+
 # ensure www-data user exists
 RUN set -x \
     && addgroup -g 82 -S www-data \
