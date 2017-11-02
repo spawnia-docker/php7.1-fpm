@@ -49,4 +49,6 @@ COPY content /
 
 EXPOSE 9000
 
+ONBUILD COPY . /var/www
+
 CMD ["php-fpm7", "-F"]
