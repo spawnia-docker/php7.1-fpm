@@ -12,7 +12,7 @@ RUN set -x \
 
 # get the most commonly used packages
 RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
-    apk --update add \
+    apk --update --no-cache add \
         php7 \
         php7-bcmath \
         php7-dom \
@@ -48,7 +48,5 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
 COPY content /
 
 EXPOSE 9000
-
-ONBUILD COPY . /var/www
 
 CMD ["php-fpm7", "-F"]
