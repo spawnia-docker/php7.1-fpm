@@ -47,6 +47,8 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
 
 COPY content /
 
+WORKDIR /var/www
+
 EXPOSE 9000
 
 CMD ["php-fpm7", "-F"]
