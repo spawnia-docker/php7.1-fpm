@@ -1,3 +1,11 @@
-PHP 7.1 Image based on Alpine
+[![nodesource/node](http://dockeri.co/image/spawnia/php7.1-fpm)](https://registry.hub.docker.com/u/spawnia/php7.1-fpm/)
 
-There is another version of this available with Dev-Tools such as Composer, XDebug etc. installed.
+### Versions
+* Minimal image for production `latest`
+* Developer version `dev`
+
+### Usage
+
+When using the developer version, it is advised to run the interactive shell as non-root.
+So when connecting either via `docker run` or `docker exec`, add the
+flag `-u me` to run as UserId 1000 with the GroupId 82.
