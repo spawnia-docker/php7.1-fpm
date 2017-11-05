@@ -11,8 +11,8 @@ RUN set -x \
     && adduser -u 82 -D -S -G www-data www-data
 
 # get the most commonly used packages
-RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
-    apk --update --no-cache add \
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
+    && apk --update --no-cache add \
         php7 \
         php7-bcmath \
         php7-dom \
