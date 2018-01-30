@@ -8,6 +8,7 @@ RUN set -x \
 RUN apk --update --no-cache add \
         curl \
         php7-zlib \
+        git \
         nodejs \
         yarn \
     && rm -rf /var/cache/apk/*
