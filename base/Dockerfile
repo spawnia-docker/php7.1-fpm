@@ -20,6 +20,7 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
         php7-curl \
         php7-fileinfo \
         php7-fpm \
+        php7-ftp \
         php7-gd \
         php7-iconv \
         php7-intl \
